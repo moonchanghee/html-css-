@@ -41,6 +41,36 @@ header {
     font-size: 1.2rem;
 }
 
+a {
+    all : unset
+}
+
+a:link {
+    text-decoration: none;
+    color: red;
+}
+
+a:visited {
+  text-decoration: none;
+  color: blue
+}
+
+a:active {
+  text-decoration: none;
+  color: #3f464d;
+}
+
+a:hover {
+  text-decoration: none;
+  color: yellow;
+}
+
+
+.head-container .head-title a:hover {
+  color: #2186c4;
+  cursor: pointer;
+}
+
 
 @media only screen and (min-width : 1200px) {
     .inner{
