@@ -4,7 +4,8 @@
 
 body {
     margin : 0 auto; 
-    color: red;
+    /* color: red; */
+    color:black
 }
 
 .inner {
@@ -114,9 +115,63 @@ section {
   line-height: 2rem;
 }
 
+.skill-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+}
+
+.python-style {
+  color: #2186c4;
+}
+
+.skill{
+  width: 25%;
+  height: 25%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 9px;
+  margin: 0 1rem;
+  box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2);
+}
+
+.skill-icon{
+  font-size: 2.5rem;
+  margin: 0 20px;
+}
+
+.skill-title {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.skill-name {
+  font-weight: bold;
+  color: #545e6f;
+  margin-bottom: 0.2rem;
+}
+
+.skill-usage {
+  font-size: 0.9rem;
+  color: #545e6f;
+}
+
 
 @media only screen and (min-width : 1200px) {
     .inner{
         max-width: 1200px;
+    }
+}
+
+/*980이하일떄*/
+@media only screen and (max-width : 980px) { 
+    .skill-container{
+        display: none;
     }
 }
